@@ -18,5 +18,5 @@ nextBtn.addEventListener('click', function () {
 
 prevBtn.addEventListener('click', function () {
     let products = document.querySelectorAll('.product')
-    document.querySelector('.product-content').appendChild(products[products.length - 1])
+    document.querySelector('.product-content').prepend(products[products.length - 1])
 })

@@ -8,6 +8,7 @@
 :root {
     --buttoncolor--: #2A74ED;
     --white--: white;
+    --black--: black;
 }
 
 /* Navbar Style */
@@ -121,6 +122,12 @@ main {
     padding: 14px 18px;
     border-radius: 30px;
     margin-top: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: var(--black--);
 }
 
 .buy-btn i {
@@ -140,6 +147,7 @@ main {
     gap: 35px;
     max-width: 1600px;
     margin: auto;
+    overflow: hidden;
 }
 
 .product {
@@ -180,27 +188,35 @@ main {
     font-size: 0.80rem;
 }
 
-/* Previous and next button */
+/* All Products Section */
 
-.buttons {
-    align-self: center;
+#smart-product-section {
+    margin-top: 100px;
 }
 
-.buttons button {
-    background-color: var(--white--);
-    border: 0.5px solid black;
-    padding: 10px 14px;
-    border-radius: 50%;
+.smart-product-content {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
+    gap: 120px;
 }
 
-.buttons .prev-btn {
-    position: absolute;
-    left: 8px;
-
+.left {
+    width: 55vw;
+    height: 450px;
 }
-.buttons .next-btn {
-    position: absolute;
-    right: 8px;
+
+.smart-product-img {
+    width: 100%;
+    height: 100%;
+}
+
+.right {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 /* utility classes */
@@ -210,3 +226,28 @@ main {
     font-weight: 500;
     font-family: "Poppins", serif;
 }
+ 
+/* Previous and next button */
+    
+    .buttons {
+        align-self: center;
+        z-index: 1;
+    }
+    
+    .buttons button {
+        background-color: var(--white--);
+        border: 0.5px solid black;
+        padding: 10px 14px;
+        border-radius: 50%;
+    }
+    
+    .buttons .prev-btn {
+        position: absolute;
+        left: 8px;
+    
+    }
+    .buttons .next-btn {
+        position: absolute;
+        right: 8px;
+    }
+    
