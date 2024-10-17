@@ -6,3 +6,17 @@ const buyButton = document.querySelector('.buy-btn')
     console.log(cartButton);
     console.log(buyButtonValue);
  })
+
+
+const nextBtn = document.querySelector('.next-btn')
+const prevBtn = document.querySelector('.prev-btn')
+
+nextBtn.addEventListener('click', function () {
+    let products = document.querySelectorAll('.product')
+    document.querySelector('.product-content').appendChild(products[0])
+})
+
+prevBtn.addEventListener('click', function () {
+    let products = document.querySelectorAll('.product')
+    document.querySelector('.product-content').appendChild(products[products.length - 1])
+})
