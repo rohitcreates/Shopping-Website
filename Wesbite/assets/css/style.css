@@ -203,7 +203,7 @@ main {
 .left {
   width: 50vw;
   height: 400px;
-}
+} 
 
 .smart-product-img {
   width: 100%;
@@ -257,8 +257,4 @@ main {
   color: var(--white--);
   font-weight: 500;
   border: none;
-}
-
-.btn:hover {
-  background-color: var(--black--);
 }
