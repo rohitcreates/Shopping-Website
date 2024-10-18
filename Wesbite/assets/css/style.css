@@ -1,253 +1,264 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
 }
 
 :root {
-    --buttoncolor--: #2A74ED;
-    --white--: white;
-    --black--: black;
+  --buttoncolor--: #2a74ed;
+  --white--: white;
+  --black--: black;
 }
 
 /* Navbar Style */
 
 #navbar {
-    display: flex;
-    max-width: 1400px;
-    margin: auto;
-    height: 80px;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: space-between;
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  height: 80px;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
 }
 
 #navbar .logo {
-    width: 120px;
+  width: 120px;
 }
 
 #navbar .logo img {
-    width: 100%;
+  width: 100%;
 }
 
 /* navbar pages */
 
 #navbar .pages {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
 #navbar .pages li {
-    font-weight: 500;
-    padding: 0 10px;
+  font-weight: 500;
+  padding: 0 10px;
 }
 
 .nav-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-right ul {
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 }
 
 .nav-right ul li {
-    padding: 0 10px;
-    font-weight: 500;
+  padding: 0 10px;
+  font-weight: 500;
 }
 
 .nav-right ul li i {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 /* cart button style */
 
 .cart-btn {
-    font-size: 0.95rem;
-    font-weight: 500;
-    background-color: var(--buttoncolor--);
-    border: none;
-    color: var(--white--);
-    padding: 10px 15px;
-    border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: var(--buttoncolor--);
+  border: none;
+  color: var(--white--);
+  padding: 10px 15px;
+  border-radius: 30px;
 }
 
 .cart-btn i {
-    font-size: 1rem;
-    padding: 2px;
-    color: var(--white--);
+  font-size: 1rem;
+  padding: 2px;
+  color: var(--white--);
 }
 
 /* Hero Section */
 
 main {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 #hero-section {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background: url(../images/image-main.jpeg)no-repeat center center/cover;
-    max-width: 1600px;
-    min-height: 580px;
-    margin: auto;
-    height: 100vh;
-    max-height: 600px;
-    border-radius: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: url(../images/image-main.jpeg) no-repeat center center/cover;
+  max-width: 1600px;
+  min-height: 580px;
+  margin: auto;
+  height: 100vh;
+  max-height: 600px;
+  border-radius: 30px;
 }
 
 #hero-section .content {
-    padding: 0 100px;
+  padding: 0 100px;
 }
 
 #hero-section .content h1 {
-    font-size: 3.4rem;
-    font-weight: 600;
-    line-height: 70px;
+  font-size: 3.4rem;
+  font-weight: 600;
+  line-height: 70px;
 }
 
 #hero-section .content span {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .buy-btn {
-    font-size: 0.95rem;
-    font-weight: 500;
-    background-color: var(--buttoncolor--);
-    border: none;
-    color: var(--white--);
-    padding: 14px 18px;
-    border-radius: 30px;
-    margin-top: 50px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: var(--buttoncolor--);
+  border: none;
+  color: var(--white--);
+  padding: 14px 18px;
+  border-radius: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .buy-btn:hover {
-    background-color: var(--black--);
+  background-color: var(--black--);
 }
 
 .buy-btn i {
-    font-size: 1rem;
-    padding: 2px;
-    color: var(--white--);
+  font-size: 1rem;
+  padding: 2px;
+  color: var(--white--);
 }
 
 /* Products Section */
 
 #product-section {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .product-content {
-    display: flex;
-    gap: 35px;
-    max-width: 1600px;
-    margin: auto;
-    overflow: hidden;
+  display: flex;
+  gap: 35px;
+  max-width: 1600px;
+  margin: auto;
+  overflow: hidden;
 }
 
 .product {
-    min-width: 320px;
-    min-height: 300px;
-    width: 100%;
-    overflow: hidden;
+  min-height: 300px;
+  width: 400px;
+  overflow: hidden;
 }
 
 .product .product-img {
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
 }
 
 .product .product-img:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product > div {
-    position: absolute;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+  position: absolute;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 .product > div span {
-    color: grey;
-    font-size: 0.80rem;
+  color: grey;
+  font-size: 0.8rem;
 }
 
 /* All Products Section */
 
 #smart-product-section {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .smart-product-content {
-    display: flex;
-    max-width: 1600px;
-    margin: auto;
-    gap: 120px;
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+  gap: 120px;
 }
 
 .left {
-    width: 55vw;
-    height: 450px;
+  width: 50vw;
+  height: 400px;
 }
 
 .smart-product-img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .right {
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 /* utility classes */
 
 .product-heading {
-    font-size: 1.6rem;
-    font-weight: 500;
-    font-family: "Poppins", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", serif;
 }
- 
+
 /* Previous and next button */
-    
-    .buttons {
-        align-self: center;
-        z-index: 1;
-    }
-    
-    .buttons button {
-        background-color: var(--white--);
-        border: 0.5px solid black;
-        padding: 10px 14px;
-        border-radius: 50%;
-    }
-    
-    .buttons .prev-btn {
-        position: absolute;
-        left: 8px;
-    
-    }
-    .buttons .next-btn {
-        position: absolute;
-        right: 8px;
-    }
-    
+
+.buttons {
+  align-self: center;
+  z-index: 1;
+}
+
+.buttons button {
+  background-color: var(--white--);
+  border: 0.5px solid black;
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+.buttons .prev-btn {
+  position: absolute;
+  left: 8px;
+}
+.buttons .next-btn {
+  position: absolute;
+  right: 8px;
+}
+
+.btn {
+  background-color: var(--buttoncolor--);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: var(--white--);
+  font-weight: 500;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--black--);
+}
