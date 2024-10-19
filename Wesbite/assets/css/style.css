@@ -199,11 +199,13 @@ main {
   max-width: 1600px;
   margin: auto;
   gap: 120px;
+  position: relative;
 }
 
 .left {
   width: 50vw;
   height: 400px;
+  position: relative;
 }
 
 .smart-product-img {
@@ -237,6 +239,88 @@ main {
   margin: 30px 0;
   width: 80%;
 }
+
+.smart-product-content .left i {
+  background-color: white;
+  font-weight: 300;
+  padding: 5px 6px;
+  border-radius: 30px;
+}
+
+.smart-product-content .left .icon-1 {
+  position: absolute;
+  top: 30px;
+  left: 210px;
+}
+
+.smart-product-content .left .icon-2 {
+  position: absolute;
+  top: 210px;
+  left: 75px;
+}
+
+.smart-product-content .left .icon-3 {
+  position: absolute;
+  top: 160px;
+  right: 150px;
+}
+
+.smart-product-content .left .icon-4 {
+  position: absolute;
+  bottom: 30px;
+  right: 110px;
+}
+
+/* Hover Image  */
+
+.hover-item {
+  position: absolute;
+  left: 100px;
+  top: 60px;
+  width: 250px;
+  height: 400px;
+  box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hover-item img {
+  width: 200px;
+}
+
+.hover-item h4 {
+  font-size: 0.80rem;
+  width: 200px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hover-item .price {
+  color: grey;
+  font-size: 0.85rem;
+}
+
+.rating i {
+  color: #FDD835;
+  font-size: 0.90rem;
+}
+
+.hover-item button {
+  background-color: #222222;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+.hover-item button:hover {
+  background-color: #444444;
+}
+
 
 /* utility classes */
 
