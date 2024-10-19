@@ -21,13 +21,12 @@ prevBtn.addEventListener('click', function () {
 
 const icon_1 = document.querySelector('.icon-1');
 
-let hoverItem = document.querySelector('.hover-item')
+const hoverItem = document.querySelector('.hover-item')
+
 icon_1.addEventListener('mouseover', function () {
-    if ("mouseover") {
-        hoverItem.style.display = "flex";
-    } else {
-        hoverItem.style.display = "none";
-    }
-    console.log("hover")
+    hoverItem.style.display = "flex"
 })
 
+icon_1.addEventListener('mouseout', function () {
+   hoverItem.style.display = "none" 
+})
