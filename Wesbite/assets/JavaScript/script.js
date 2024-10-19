@@ -21,26 +21,21 @@ prevBtn.addEventListener("click", function () {
     .prepend(products[products.length - 1]);
 });
 
-// const icon_1 = document.querySelector('.icon-1');
-
-// const hoverItem = document.querySelector('.hover-item')
-
-// icon_1.addEventListener('mouseover', function () {
-//     hoverItem.style.display = "flex"
-// })
-
-// icon_1.addEventListener('mouseout', function () {
-//    hoverItem.style.display = "none"
-// })
-
-const icon = document.querySelector("icon-2");
-const hoverItem = document.querySelector(".hover-item");
-
-icon.addEventListener('mouseover', function () {
-    hoverItem.style.display = "flex"
-})
 
 
-icon.addEventListener('mouseout', function () {
-    hoverItem.style.display = "none"
-})
+const iconHover = document.querySelectorAll(".icon");
+
+const hoverItem = document.querySelectorAll(".hover-item");
+
+
+iconHover.forEach((icon) => {
+  icon.addEventListener("mouseover", function () {
+    const index = Array.from(iconHover).indexOf(icon);  // Get the index of the hovered icon
+    hoverItem[index].style.display = "flex";  // Show the corresponding hover item
+  });
+
+  icon.addEventListener("mouseout", function () {
+    const index = Array.from(iconHover).indexOf(icon);  // Get the index of the hovered icon
+    hoverItem[index].style.display = "none";  // Hide the corresponding hover item
+  });
+});
