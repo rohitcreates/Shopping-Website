@@ -18,3 +18,16 @@ prevBtn.addEventListener('click', function () {
     let products = document.querySelectorAll('.product')
     document.querySelector('.product-content').prepend(products[products.length - 1])
 })
+
+const icon_1 = document.querySelector('.icon-1');
+
+let hoverItem = document.querySelector('.hover-item')
+icon_1.addEventListener('mouseover', function () {
+    if ("mouseover") {
+        hoverItem.style.display = "flex";
+    } else {
+        hoverItem.style.display = "none";
+    }
+    console.log("hover")
+})
+
