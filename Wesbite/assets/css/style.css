@@ -9,6 +9,7 @@
   --buttoncolor--: #2a74ed;
   --white--: white;
   --black--: black;
+  --primary-color--: #2a74ed;
 }
 
 /* Navbar Style */
@@ -203,7 +204,7 @@ main {
 .left {
   width: 50vw;
   height: 400px;
-} 
+}
 
 .smart-product-img {
   width: 100%;
@@ -216,6 +217,25 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+
+.right h3 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  width: 90%;
+  line-height: 50px;
+}
+
+.right hr {
+  width: 130px;
+  height: 5px;
+  background-color: var(--primary-color--);
+  border-radius: 4px;
+}
+
+.right p {
+  margin: 30px 0;
+  width: 80%;
 }
 
 /* utility classes */
