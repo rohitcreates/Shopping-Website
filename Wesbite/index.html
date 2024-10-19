@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add fontawesome cdn -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -10,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- add google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,13 +19,17 @@
       rel="stylesheet"
     />
     <title>Shopping Website</title>
+    <!-- style sheet -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- navbar -->
     <nav id="navbar">
+      <!-- main logo -->
       <div class="logo">
         <img src="assets/images/logo.png" alt="Logo" />
       </div>
+      <!-- all pages -->
       <ul class="pages">
         <li>Element</li>
         <li>Shop</li>
@@ -31,23 +37,33 @@
         <li>Blog</li>
         <li>About us</li>
         <li>Contacts</li>
+        <!-- search icon -->
         <li><i class="fa-solid fa-magnifying-glass"></i></li>
       </ul>
+      <!-- navbar right side -->
       <div class="nav-right">
         <ul>
+          <!-- reload icon -->
           <li><i class="fa-solid fa-arrows-rotate"></i></li>
+          <!-- heart icon -->
           <li><i class="fa-regular fa-heart"></i></li>
+          <!-- contact icon -->
           <li><i class="fa-regular fa-user"></i></li>
           <li>Sign in</li>
         </ul>
+        <!-- Cart button -->
         <button class="cart-btn">
+          <!-- cart icon -->
           <i class="fa-solid fa-cart-arrow-down"></i>
           Cart <span>$0.00</span>
         </button>
       </div>
     </nav>
+    <!-- main content -->
     <main>
+      <!-- hero section  -->
       <section id="hero-section">
+        <!-- hero secton content -->
         <div class="content">
           <span>The Next generation</span>
           <h1>Innovation That</h1>
@@ -56,23 +72,27 @@
             Get instant alerts for anyone who approaches, even <br />
             if they don’t press the headphone.
           </p>
+          <!-- buy button  -->
           <button class="buy-btn">
             <i class="fa-solid fa-cart-arrow-down"></i>
             Buy Now - <span>$320</span>
           </button>
         </div>
       </section>
+      <!-- Carousel Product section -->
       <section id="product-section">
+        <!-- Product Content -->
         <div class="product-content">
           <div class="product">
             <div>
               <h3 class="product-heading">Computer & PC</h3>
               <span>6 PRODUCTS</span>
             </div>
+            <!-- Product Image -->
             <img
-              class="product-img"
-              src="assets/images/product-1.jpeg"
-              alt=""
+            class="product-img"
+            src="assets/images/product-1.jpeg"
+            alt=""
             />
           </div>
           <div class="product">
@@ -80,10 +100,11 @@
               <h3 class="product-heading">Smart Gadgets</h3>
               <span>2 PRODUCTS</span>
             </div>
+            <!-- Product Image -->
             <img
-              class="product-img"
-              src="assets/images/product-2.jpeg"
-              alt=""
+            class="product-img"
+            src="assets/images/product-2.jpeg"
+            alt=""
             />
           </div>
           <div class="product">
@@ -91,10 +112,11 @@
               <h3 class="product-heading">TV & Monitors</h3>
               <span>5 PRODUCTS</span>
             </div>
+            <!-- Product Image -->
             <img
-              class="product-img"
-              src="assets/images/product-3.jpeg"
-              alt=""
+            class="product-img"
+            src="assets/images/product-3.jpeg"
+            alt=""
             />
           </div>
           <div class="product">
@@ -102,31 +124,40 @@
               <h3 class="product-heading">Wearable Items</h3>
               <span>9 PRODUCTS</span>
             </div>
+            <!-- Product Image -->
             <img
-              class="product-img"
-              src="assets/images/product-4.jpeg"
-              alt=""
+            class="product-img"
+            src="assets/images/product-4.jpeg"
+            alt=""
             />
           </div>
           <div class="buttons">
             <button class="next-btn">
+              <!-- next button icon -->
               <i class="fa-solid fa-arrow-right"></i>
             </button>
             <button class="prev-btn">
+              <!-- prev button icon -->
               <i class="fa-solid fa-arrow-left"></i>
             </button>
           </div>
         </div>
       </section>
+      <!-- Smart Product Section -->
       <section id="smart-product-section">
+        <!-- Content -->
         <div class="smart-product-content">
+          <!-- left side  -->
             <div class="left">
+              <!-- left side product image -->
                 <img class="smart-product-img" src="assets/images/Pin-Banner-1.jpeg" alt="" />
+                <!-- item hover icon -->
                 <i class="fa-solid fa-plus icon-1 icon"></i>
                 <i class="fa-solid fa-plus icon-2 icon"></i>
                 <i class="fa-solid fa-plus icon-3 icon"></i>
                 <i class="fa-solid fa-plus icon-4 icon"></i>
             </div>
+            <!-- hover items  -->
             <div class="hover-item hover-item-1">
               <img src="assets/images/Echo Dot img.jpeg" alt="">
               <h4>Amazon Echo Dot (3rd Gen) Smart</h4>
@@ -179,8 +210,10 @@
               </div>
               <button>Add to cart</button>
             </div>
+            <!-- product right side -->
             <div class="right">
                 <h3>Lookout Smart products here, there, everywhere.</h3>
+                <!-- blue horizontal line -->
                 <hr/>
                 <p>
                     Save when you shop the Best Buy Outlet for clearance, open-box,
@@ -191,7 +224,9 @@
             </div>
         </div>
       </section>
+      <!-- Tranding Items  -->
       <section id="tranding-item-section">
+        <!-- Content -->
         <div class="tranding-item-content">
           <h1>Shop Our Trending Items</h1>
           <hr>
@@ -199,6 +234,7 @@
         </div>
       </section>
     </main>
+    <!-- JavaScript file link -->
     <script src="assets/JavaScript/script.js"></script>
   </body>
 </html>
