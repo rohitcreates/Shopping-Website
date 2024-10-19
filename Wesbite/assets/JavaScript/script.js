@@ -19,14 +19,14 @@ prevBtn.addEventListener('click', function () {
     document.querySelector('.product-content').prepend(products[products.length - 1])
 })
 
-const icon_1 = document.querySelector('.icon-1');
+const icon = document.querySelector('.icon');
 
 const hoverItem = document.querySelector('.hover-item')
 
-icon_1.addEventListener('mouseover', function () {
+icon.addEventListener('mouseover', function () {
     hoverItem.style.display = "flex"
-})
+}) 
 
-icon_1.addEventListener('mouseout', function () {
+icon.addEventListener('mouseout', function () {
    hoverItem.style.display = "none" 
 })
